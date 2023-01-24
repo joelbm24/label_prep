@@ -1,0 +1,32 @@
+[package]
+name = "label_prep"
+version = "0.1.0"
+edition = "2021"
+description = "Prepare shipping labels for printing."
+
+[[bin]]
+name = "label_prep"
+test = false
+bench = false
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[package.metadata.bundle]
+name = "Label Prep"
+identifier = "com.joel.label_prep"
+icon = ["assets/icon32x32.png", "assets/icon128x128.png", "assets/icon256x256.png"]
+version = "0.1.0"
+copyright = "Copyright (c) Joel Buchheim-Moore 2023. All rights reserved."
+category = "Productivity"
+short_description = "Prepare shipping labels for printing."
+long_description = """
+Prepare shipping labels for printing.
+"""
+osx_url_schemes = ["com.doe.exampleapplication"]
+
+[dependencies]
+pdf = {version = "0.8.0", features = ["dump"]}
+printpdf = { version = "0.5.3", features = ["embedded_images"] }
+fltk = { version = "^1.3" }
+fltk-theme = { version = "0.6.0", features = ["cocoa-colors"] }
+chrono = "0.4.23"

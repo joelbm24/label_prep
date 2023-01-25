@@ -1,0 +1,10 @@
+{
+  "title": "Install Label Prep",
+  "background": "background.png",
+  "icon-size": 128,
+  "contents": [
+    { "x": 192, "y": 122, "type": "file", "path": "../target/x86_64-apple-darwin/release/bundle/osx/Label\ Prep.app" },
+    { "x": 448, "y": 122, "type": "link", "path": "/Applications" }
+  ]
+}
+
